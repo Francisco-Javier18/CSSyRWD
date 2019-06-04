@@ -52,6 +52,11 @@ color: white;
 margin: 5px;
 }
 
+#galeria{
+ background-color: #d5c75f;
+ border: 1px;
+}
+
 #secundaria {
  background-color: #d5c75f;
  border: 1px;
@@ -94,6 +99,11 @@ figcaption {
  filter:sepia(90%);
 }
 
+#galeria figure:nth-child(even) {
+ -webkit-filter:grayscale(100%);
+ filter: grayscale(100%);
+}
+
 #pie {
  background-color: #C6d5c5;
 }
@@ -128,6 +138,10 @@ margin: 2% 6%;
  height: 400px;
 }
 
+#galeria{
+ height: 350px;
+}
+
 #secundaria {
  display: flex;
  flex-direction: row;
@@ -139,6 +153,22 @@ margin: 2% 6%;
 
 #secundaria figure {
  width: 50%;
+}
+
+#galeria{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+
+#galeria figure {
+ width: 30%;
+ margin: auto;
+ margin-left: 2%;
+}
+
+#galeria img {
+ margin: 10px 10px;
 }
 
 #menu {
@@ -208,6 +238,14 @@ h1 {
    font-size: 4vw;
  }
 
+ .encabezado2 {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   padding: 0px 20px 40px 20px;
+   height: 100%;
+   font-size: 4vw;
+ }
 
  #central {
    height: 100%;
@@ -225,6 +263,10 @@ h1 {
 
  #secundaria figure {
    width: 100%;
+ }
+
+ #galeria {
+   height: 100%;
  }
 
  #pie {
